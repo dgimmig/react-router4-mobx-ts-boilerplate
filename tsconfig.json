@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        // "target": "es5",
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "noImplicitUseStrict": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "./build"
+        //http://stackoverflow.com/questions/27573365/how-to-use-typescript-with-native-es6-promises
+        //http://stackoverflow.com/questions/40800354/using-es6-promise-with-typescript-2-1-es5-webpack-async-await
+        // "lib": [
+        //     "dom",
+        //     "es5",
+        //     "es2015.promise"
+        // ]
+    },
+    "awesomeTypeScriptLoaderOptions": {
+        "forkChecker": true,
+        "useBabel": true,
+        "useCache": true
+    },
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    },
+    "filesGlob": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "typings/**/*.d.ts",
+        "typings/index.d.ts",
+        "!node_modules/**"
+    ]
+}
